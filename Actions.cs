@@ -23,12 +23,27 @@ namespace Heyhey
             core.Replace_Tile(oldTile.index, newTile);
         }
 
+        public void WaterTransformation(Tile oldTile)
+        {
+            Tile newTile = new Water(oldTile.index, (int)oldTile.rec.X, (int)oldTile.rec.Y, core.square_size, core);
+            core.Replace_Tile(oldTile.index, newTile);
+        }
+
         public void Scratch(Tile tile)
         {
             tile.use += 1;
             if (tile.use == 5)
             {
                 GrassTransformation(tile);
+            }
+        }
+
+        public void ScratchGrass(Tile tile)
+        {
+            tile.use += 1;
+            if (tile.use == 2)
+            {
+                WaterTransformation(tile);
             }
         }
 

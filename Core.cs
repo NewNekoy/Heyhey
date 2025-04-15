@@ -51,7 +51,7 @@ namespace Heyhey
 
                 for (int x = 0; x < tile_length; x++)
                 {
-                    Tile tileToReuse = null;
+                    Tile? tileToReuse = null;
 
                     if (y < map.Count && x < map[y].Count)
                     {

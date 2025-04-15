@@ -20,6 +20,9 @@ namespace Heyhey.Tiles
 
             definedButtons.Add(new("Planter une graine", "Execution...", "PlantWood", 5));
 
+            if (core.inventory.HasEnough("Vitality", 0))
+            definedButtons.Add(new("Scratch", "Scratching...", "ScratchGrass", 1));
+
             if (core.can_buy)
             {
                 definedButtons.Add(new("Expand", "Expanding...", "ExpandMap", 10));

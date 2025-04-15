@@ -150,6 +150,7 @@ namespace Heyhey
             actionMap["ChoppingTree"] = core.actions.ChoppingTree;
             actionMap["ExpandMap"] = core.actions.ExpandMap;
             actionMap["Destroy"] = core.actions.Destroy;
+            actionMap["ScratchGrass"] = core.actions.ScratchGrass;
         }
     }
 }
